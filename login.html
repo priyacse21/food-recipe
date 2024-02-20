@@ -1,0 +1,131 @@
+
+<html>
+  <script>
+    window.addEventListener( "load", start, false );
+function start()
+{
+document.getElementById("myform").addEventListener("submit",subfun, false );
+
+}
+    function subfun() 
+{ window.alert("Are you Sure to submit");
+  window.alert("Thank you");
+}
+  </script>
+	<style>
+		.main-box {
+  background-color: #fff;
+  width: 400px;
+  margin-left: 35vw;
+  margin-top: 10vw;
+  margin-bottom: 20vw;
+  box-shadow: 10px, 10px;
+  border-width: 5px;
+}
+.main-box{
+  border-style: solid;
+  border-width: 5px;
+  color: white;
+
+  padding: 40px;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-50%,-50%);
+  background-image: url("https://t3.ftcdn.net/jpg/02/67/52/80/360_F_267528061_k9B0v8K9ZEXdtca36uc9zV8iLRDohylI.jpg");
+ 
+  border-radius: 25px;
+
+}
+.h1{
+	text-align: center;
+  text-shadow: 3px 3px 3px rgb(55, 160, 192); 
+  padding-top: 25px;
+}
+.form-control{
+	margin-left: 1vw;
+  margin-right: 1vw;
+  width: 340px;
+  padding: 12px 22px;
+  position: relative;
+}
+h1{
+	
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	color: crimson;
+}
+h2{
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+	color: crimson;
+
+}
+.btn{
+  border: 2px solid aqua;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 50px;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: larger;
+  color:white;
+ 
+}
+.btn1{
+	border: 2px solid aqua;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 40px;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: larger;
+  background-color: transparent;
+  color:white;
+}
+	</style>
+<body>
+<form id="myform" method="post">
+	<div class="main-box">
+		<h1>LOGIN</h1>
+		
+	Name<input type="text" name="name" class="form-control" placeholder="enter name"value=""/><br/><br>
+	Email<input type="email" name="email" class="form-control" placeholder="enter email"value=""/><br/><br>
+	Password<input type="password" class="form-control" name="password"placeholder="password"  value=""/><br/><br>
+	<input type="submit" name="login" class="btn" id="sub" value="Login" formaction="http://localhost:3000/login"/>
+	<h2><hr>or</h2>
+	<input type="submit" name="signin" class="btn1" value="sign in" formaction="index.html"/>
+	</div>			
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
